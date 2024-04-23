@@ -1,4 +1,4 @@
-﻿namespace labs23
+﻿namespace lab9
 {
     partial class Form1
     {
@@ -51,6 +51,9 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.lbMean = new System.Windows.Forms.Label();
+            this.lbVar = new System.Windows.Forms.Label();
+            this.lbHiSqv = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.num1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num3)).BeginInit();
@@ -254,11 +257,41 @@
             this.label9.Text = "label9";
             this.label9.Visible = false;
             // 
+            // lbMean
+            // 
+            this.lbMean.AutoSize = true;
+            this.lbMean.Location = new System.Drawing.Point(288, 491);
+            this.lbMean.Name = "lbMean";
+            this.lbMean.Size = new System.Drawing.Size(104, 16);
+            this.lbMean.TabIndex = 18;
+            this.lbMean.Text = "Матожидание: ";
+            // 
+            // lbVar
+            // 
+            this.lbVar.AutoSize = true;
+            this.lbVar.Location = new System.Drawing.Point(288, 519);
+            this.lbVar.Name = "lbVar";
+            this.lbVar.Size = new System.Drawing.Size(83, 16);
+            this.lbVar.TabIndex = 19;
+            this.lbVar.Text = "Дисперсия: ";
+            // 
+            // lbHiSqv
+            // 
+            this.lbHiSqv.AutoSize = true;
+            this.lbHiSqv.Location = new System.Drawing.Point(288, 548);
+            this.lbHiSqv.Name = "lbHiSqv";
+            this.lbHiSqv.Size = new System.Drawing.Size(150, 16);
+            this.lbHiSqv.TabIndex = 20;
+            this.lbHiSqv.Text = "Критерий хи квадрат: ";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(920, 519);
+            this.ClientSize = new System.Drawing.Size(920, 586);
+            this.Controls.Add(this.lbHiSqv);
+            this.Controls.Add(this.lbVar);
+            this.Controls.Add(this.lbMean);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.button1);
@@ -308,6 +341,9 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lbMean;
+        private System.Windows.Forms.Label lbVar;
+        private System.Windows.Forms.Label lbHiSqv;
     }
 }
 
